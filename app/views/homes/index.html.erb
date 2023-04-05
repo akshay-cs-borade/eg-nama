@@ -12,6 +12,7 @@
     </style>
   </head>
   <body autocomplete="off">
+  <div id="exportContent">    
     <p style="margin-top:0.05in;margin-right:0in;margin-bottom:10.0pt;margin-left:0in;line-height:115%;font-size:15px;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;text-align:center;">
       <strong>
         <span style="font-size:21px;line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">
@@ -83,8 +84,10 @@
     <p style="margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:.5in;line-height:115%;font-size:15px;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;"><span style="font-size:19px;line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<strong>lgk;d jktLo vf/kdkjh</strong>&nbsp;</span></p>
     <p style="margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:.25in;line-height:115%;font-size:15px;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;"><span style="font-size:19px;line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><strong><span style="font-family:&quot;Kruti Dev 010&quot;;">bUnkSj uxj ikfydk fuxe</span></strong></p>
     <p style="margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height:115%;font-size:15px;font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;"><span style="font-size:19px;line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><strong><span style="font-family:&quot;Kruti Dev 010&quot;;">&gt;ksu Ø- 14</span></strong></p>
+    </div>
     <button class="preview">Preview</button>
     <button class="edit" style="display: none;">Edit</button>
+    <button class="final-preview" style="display: none; float: right;">PRINT PAGE</button>
     <script type="text/javascript">
       $(document).ready(function(){	
           $('.add').on('click', add);
@@ -136,6 +139,7 @@
         
         $(this).hide()
         $('.edit').show()
+        $('.final-preview').show()
       })
 
       $('.edit').on('click', function(){
@@ -143,6 +147,7 @@
         $('.testing-valu').remove()
         $('.testing').show()
         $(this).hide()
+        $('.final-preview').hide()
       });
       
       $('.flat-no').on('blur', function(){
@@ -178,6 +183,13 @@
       	$('#ka-naam-ankit1').val(kaNaamAnkit.join(", "))
       })
       })
+
+      $('.final-preview').on('click', function(){
+        $('.edit').hide()
+        $('.preview').hide()
+        $(this).hide()
+        window.print()
+      });
       
     </script>
   </body>
