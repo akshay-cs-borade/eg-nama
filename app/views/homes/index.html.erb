@@ -12,7 +12,13 @@
     </style>
   </head>
   <body autocomplete="off">
-  <div id="exportContent">    
+  <div id="exportContent">
+    <p style="margin-top:0.05in;margin-right:0in;margin-bottom:10.0pt;margin-left:0in;line-height:115%;">
+      <span style="line-height:115%;">
+        <label for="myCheck" class="new-account-label">New A/C</label> 
+        <input type="checkbox" id="newAccountCheck">
+      </span>  
+    </p>   
     <p style="margin-top:0.05in;margin-right:0in;margin-bottom:10.0pt;margin-left:0in;line-height:115%;text-align:center;">
       <strong>
         <span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">
@@ -58,11 +64,7 @@
     <p style="margin-top:0.05in;margin-right:0in;margin-bottom:10.0pt;margin-left:0in;line-height:115%;text-align:justify;">
       <span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">&nbsp; &nbsp; &nbsp; &nbsp;Hkou dk foHkktu@,dhdj.k gksus ds dkj.k vkidk uohu Hkou Øekad
         <span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;">
-          <span class="input-new">
-            <strong>
-              <input type="text" class="testing flat-no1">
-            </strong>
-          </span>  
+          <span class="input-new">....................................................................</span>  
         </span> 
         gksxkA 
       </span>  
@@ -155,6 +157,14 @@
           $('#other').remove()
         }
         
+        var checkBox = $("#newAccountCheck");
+        if (checkBox.is(":checked")){
+          $('.new-account-label').show()
+          checkBox.hide();
+        } else {
+          $('.new-account-label').hide()
+          checkBox.hide();
+        }
         $(this).hide()
         $('.edit').show()
         $('.final-preview').show()
@@ -168,11 +178,15 @@
         $('.final-preview').hide()
         $('.add').show()
         $('.remove').show()
+        $("#newAccountCheck").show();
+        $('.new-account-label').show();
       });
       
       $('.flat-no').on('blur', function(){
       	$('.flat-no1').val($(this).val())
       })
+
+      
       
       $('.mohalla').on('blur', function(){
       	$('.mohalla1').val($(this).val())
