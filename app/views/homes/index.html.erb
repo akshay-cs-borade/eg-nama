@@ -9,6 +9,9 @@
         font-family:'Calibri','sans-serif';
         font-weight: 'bold';
       }
+      .extra-mohalla-hide {
+        display: none; 
+      }
     </style>
   </head>
   <body autocomplete="off">
@@ -63,10 +66,18 @@
     <strong><span style=";color:#222222;background:white;"><span class="input-new"><strong><input type="text" class="testing k-sthan-par1" id="k-sthan-par1"></strong></span></span></strong><strong><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#222222;background:white;">&nbsp;</span></strong><span style="font-family:&quot;Kruti Dev 010&quot;;">ds LFkku ij&nbsp;</span><strong><span style="font-family:&quot;Kokila&quot;,&quot;sans-serif&quot;;">&nbsp;</span></strong><strong><span style=";color:#222222;background:white;"><span class="input-new"><strong><input type="text" class="testing ka-naam-ankit1" id="ka-naam-ankit1"></strong></span></span></strong><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#222222;background:white;">&nbsp;</span><strong><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#222222;">&nbsp;</span></strong><span style="font-family:&quot;Kruti Dev 010&quot;;">dk uke vafdr fd;k x;k gSA</span></p>
     <p style="margin-top:0.05in;margin-right:0in;margin-bottom:10.0pt;margin-left:0in;line-height:115%;text-align:justify;">
       <span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">&nbsp; &nbsp; &nbsp; &nbsp;Hkou dk foHkktu@,dhdj.k gksus ds dkj.k vkidk uohu Hkou Øekad
-        <span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;">
-          <span class="input-new">....................................................................</span>  
-        </span> 
-        gksxkA 
+        <span>
+          <span class="extra-mohalla-hide flat2-mohalla2">
+            <strong>
+              <span class="input-new"><input type="text" class="testing flat-no2"></span>
+              <span class="input-new"><input type="text" class="testing mohalla2"></span>
+            </strong>  
+          </span>
+          <span class="no-flat2-mohalla2" style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;">
+            <span class="input-new">....................................................................</span>            
+          </span>
+        </span>  
+        <span>gksxkA</span> 
       </span>  
     </p>
     <ol style="list-style-type: undefined;margin-left:0.25in;">
@@ -184,12 +195,12 @@
       
       $('.flat-no').on('blur', function(){
       	$('.flat-no1').val($(this).val())
+        $('.flat-no2').val($(this).val())
       })
-
-      
       
       $('.mohalla').on('blur', function(){
       	$('.mohalla1').val($(this).val())
+        $('.mohalla2').val(`, ${$(this).val()}`)
       })
       
       $('.pavati').on('blur', function(){
@@ -223,6 +234,16 @@
         $('.preview').hide()
         $(this).hide()
         window.print()
+      });
+
+      $('#newAccountCheck').on('click', function(){
+        if ($(this).is(":checked")){
+          $('.flat2-mohalla2').show()
+          $('.no-flat2-mohalla2').hide()
+        } else {
+          $('.flat2-mohalla2').hide()
+          $('.no-flat2-mohalla2').show()
+        }
       });
       
     </script>
