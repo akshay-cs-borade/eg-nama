@@ -17,7 +17,8 @@ class CreateNamantarans < ActiveRecord::Migration[7.0]
       t.string :prathm
       t.string :divitiya
       t.string :tritiya
-      t.string :other   
+      t.string :other
+      t.boolean :new_account, default: false   
 
       t.timestamps
     end

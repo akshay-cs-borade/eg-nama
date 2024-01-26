@@ -18,6 +18,10 @@
     <body autocomplete="off">
         <div id="exportContent">
         <p style="margin-top:0.05in;margin-right:0in;margin-bottom:10.0pt;margin-left:0in;line-height:115%;">
+        <a href="<%= namantarans_path %>">
+          <button class="edit button green" style="float: right;">Listing</button>
+        </a>
+        <br/>
         <span style="line-height:115%;">
             <label for="myCheck" class="new-account-label">New A/C</label> 
             <input type="checkbox" id="newAccountCheck">
@@ -56,11 +60,14 @@
         <div id="new_chq">
         <p style="margin-top:0.05in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height:115%;text-indent:.5in;"><strong><span style="line-height:115%;;color:#222222;background:white;"><span class="input-new"><strong><input type="text" class="testing ka-naam-ankit"></strong></span></span></strong></p>
         </div>
+    <div>&nbsp;<div>    
         <input type="hidden" value="1" id="total_chq">
-        <button class="add">Add</button>
-        <button class="remove">remove</button>
+        <button class="add button gray">Add</button>
+        <button class="remove button red">Remove</button>
         <br/>
-    <%= form_with model: @namantaran do |form| %>    
+    <div>&nbsp;<div>    
+    <%= form_with model: @namantaran do |form| %>
+        <input type="hidden" id="new_account" name="namantaran[new_account]">    
         <p style="margin-top:0.05in;margin-right:0in;margin-bottom:.0001pt;margin-left:.5in;line-height:115%;text-align:justify;text-indent:-.5in;"><strong><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">fo"k;</span></strong><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">&nbsp;% IykV@edkua@¶ySV ua-&nbsp;</span><strong><span style=";"><span class="input-new"><strong>
             <input type="text" class="testing flat-no" name="namantaran[flat_no]">
         </strong></span>&nbsp;&nbsp;</span></strong><strong><span style="font-family:&quot;Kruti Dev 010&quot;;">&nbsp;</span></strong><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">eksgYyk&nbsp;</span><span style="line-height:115%;;">:&nbsp;</span><strong><span style="line-height:115%;;color:#222222;background:white;"><span class="input-new"><strong>
@@ -143,10 +150,10 @@
         </div>
         </div>
     
-    <%= form.submit 'SAVE KARDO' %>
+    <%= form.submit 'SAVE KARDO', class: 'button blue' %>
   <% end %>
-        <button class="edit" style="display: none;">Edit</button>
-        <button class="final-preview" style="display: none; float: right;">PRINT PAGE</button>
+        <button class="edit button red" style="display: none;">Edit</button>
+        <button class="final-preview button green" style="display: none; float: right;">PRINT PAGE</button>
         <script type="text/javascript">
         $(document).ready(function(){	
             $('.add').on('click', add);
@@ -270,9 +277,11 @@
             if ($(this).is(":checked")){
             $('.flat2-mohalla2').show()
             $('.no-flat2-mohalla2').hide()
+            $('#new_account').val(true);
             } else {
             $('.flat2-mohalla2').hide()
             $('.no-flat2-mohalla2').show()
+            $('#new_account').val(false);
             }
         });
         
