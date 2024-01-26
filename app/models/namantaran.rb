@@ -1,0 +1,2 @@
+class Namantaran < ApplicationRecord
+end

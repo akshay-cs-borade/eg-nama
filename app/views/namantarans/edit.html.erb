@@ -1,0 +1,283 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.0.0.js" integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo=" crossorigin="anonymous"></script>
+    <style>
+      .testing-valu{
+        font-family:'Calibri','sans-serif';
+        font-weight: 'bold';
+      }
+      .extra-mohalla-hide {
+        display: none; 
+      }
+    </style>
+  </head>
+  
+    <body autocomplete="off">
+        <div id="exportContent">
+        <p style="margin-top:0.05in;margin-right:0in;margin-bottom:10.0pt;margin-left:0in;line-height:115%;">
+        <span style="line-height:115%;">
+            <label for="myCheck" class="new-account-label">New A/C</label> 
+            <input type="checkbox" id="newAccountCheck">
+        </span>  
+        </p>   
+        <p style="margin-top:0.05in;margin-right:0in;margin-bottom:10.0pt;margin-left:0in;line-height:115%;text-align:center;">
+        <strong>
+            <span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">
+            dk;kZy; uxj ikfydk fuxe bUnkSj<br>&nbsp;jktsUnz /kkjdj &gt;ksu Ø- 14<br>&nbsp;laifRr dj &amp; foHkkx<br>&nbsp;
+            </span>
+        </strong>
+        <span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">
+            ¼e-iz-u-ik-fuxe vf/kfu;e 1956 dh /kkjk 167 ds varxZr½
+        </span>
+        </p>
+        <p style="margin-top:0.05in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height:115%;">
+        <strong>
+            <span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">
+            Øekad&nbsp;
+            </span>
+        </strong>
+        </p>
+        <p style="margin-top:0.05in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height:115%;">
+        <strong>
+            <span style=";color:#222222;background:white;">प्रति</span>
+        </strong>
+        <span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#222222;background:white;">
+            &nbsp;,
+        </span>
+        <strong>
+            <span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;fnukad
+            </span>
+        </strong>
+        </p>
+        <div id="new_chq">
+        <p style="margin-top:0.05in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height:115%;text-indent:.5in;"><strong><span style="line-height:115%;;color:#222222;background:white;"><span class="input-new"><strong><input type="text" class="testing ka-naam-ankit"></strong></span></span></strong></p>
+        </div>
+        <input type="hidden" value="1" id="total_chq">
+        <button class="add">Add</button>
+        <button class="remove">remove</button>
+        <br/>   
+    <%= form_with model: @namantaran do |form| %>    
+        <p style="margin-top:0.05in;margin-right:0in;margin-bottom:.0001pt;margin-left:.5in;line-height:115%;text-align:justify;text-indent:-.5in;"><strong><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">fo"k;</span></strong><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">&nbsp;% IykV@edkua@¶ySV ua-&nbsp;</span><strong><span style=";"><span class="input-new"><strong>
+            <input type="text" class="testing flat-no" name="namantaran[flat_no]" value="<%= @namantaran.flat_no %>">
+        </strong></span>&nbsp;&nbsp;</span></strong><strong><span style="font-family:&quot;Kruti Dev 010&quot;;">&nbsp;</span></strong><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">eksgYyk&nbsp;</span><span style="line-height:115%;;">:&nbsp;</span><strong><span style="line-height:115%;;color:#222222;background:white;"><span class="input-new"><strong>
+            <input type="text" class="testing mohalla" name="namantaran[mohalla]" value="<%= @namantaran.mohalla %>">
+        </strong></span></span></strong>
+        <span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">&nbsp;lfoZl ua-@fiu ua-&nbsp;</span><strong><span style="line-height:115%;"><span class="input-new"><strong>
+            <input type="text" class="testing" name="namantaran[pin_no]" value="<%= @namantaran.pin_no %>">
+        </strong></span></span></strong><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">&nbsp; ij uke ifjorZu lEcU/khA</span></p>
+        <p style="margin-top:0.05in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height:115%;text-align:justify;"><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">&nbsp; &nbsp; &nbsp; &nbsp;mijksDr fo"k; ds lanHkZ esa vki dk vkod Øekad&nbsp;</span><strong><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;"><span class="input-new"><strong>
+            <input type="text" class="testing" name="namantaran[aawak_no]" value="<%= @namantaran.aawak_no %>">
+        </strong></span></span></strong><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">&nbsp; fnukad&nbsp;</span><strong><span style="line-height:115%;;"><span class="input-new"><strong>
+            <input type="text" class="testing dinank" name="namantaran[aawak_dinank]" value="<%= @namantaran.aawak_dinank %>">
+        </strong></span></span></strong><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">&nbsp;dk bl dk;kZy; esa izkIr gksus ij ls lwfpr fd;k tkrk gS fd %&amp;</span></p>
+        <p style="margin-top:0.05in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height:normal;text-align:justify;"><span style="font-family:&quot;Kruti Dev 010&quot;;">&nbsp; &nbsp; &nbsp; &nbsp;uxj ikfydk ds dj olwyh ystj esa edku ua-&nbsp;</span><strong><span style=";"><span class="input-new"><strong><input type="text" class="testing flat-no1" value="<%= @namantaran.flat_no %>"></strong></span></span></strong><span style="font-family:&quot;Kruti Dev 010&quot;;">&nbsp;</span><span style="font-family:&quot;Kruti Dev 010&quot;;">&nbsp;eksgYyk</span><span style=";">&nbsp;:</span><span style="font-family:&quot;Kruti Dev 010&quot;;">&nbsp;</span><strong><span style=";color:#222222;background:white;"><span class="input-new"><strong><input type="text" class="testing mohalla1" value="<%= @namantaran.mohalla %>"></strong></span></span></strong><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#222222;background:white;">&nbsp; &nbsp;</span><span style="font-family:&quot;Kruti Dev 010&quot;;">ij &nbsp;</span>
+        <strong><span style=";color:#222222;background:white;"><span class="input-new"><strong>
+            <input type="text" class="testing k-sthan-par1" id="k-sthan-par1" name="namantaran[sthan_par]" value="<%= @namantaran.sthan_par %>">
+        </strong></span></span></strong><strong><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#222222;background:white;">&nbsp;</span></strong><span style="font-family:&quot;Kruti Dev 010&quot;;">ds LFkku ij&nbsp;</span><strong><span style="font-family:&quot;Kokila&quot;,&quot;sans-serif&quot;;">&nbsp;</span></strong><strong><span style=";color:#222222;background:white;"><span class="input-new"><strong>
+            <input type="text" class="testing ka-naam-ankit1" id="ka-naam-ankit1" name="namantaran[ka_naam]" value="<%= @namantaran.ka_naam %>">
+        </strong></span></span></strong><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#222222;background:white;">&nbsp;</span><strong><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#222222;">&nbsp;</span></strong><span style="font-family:&quot;Kruti Dev 010&quot;;">dk uke vafdr fd;k x;k gSA</span></p>
+        <p style="margin-top:0.05in;margin-right:0in;margin-bottom:10.0pt;margin-left:0in;line-height:115%;text-align:justify;">
+        <span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">&nbsp; &nbsp; &nbsp; &nbsp;Hkou dk foHkktu@,dhdj.k gksus ds dkj.k vkidk uohu Hkou Øekad
+            <span>
+            <span class="extra-mohalla-hide flat2-mohalla2">
+                <strong>
+                <span class="input-new"><input type="text" class="testing flat-no2" value="<%= @namantaran.flat_no %>"></span>
+                <span class="input-new"><input type="text" class="testing mohalla2" value="<%= @namantaran.mohalla %>"></span>
+                </strong>  
+            </span>
+            <span class="no-flat2-mohalla2" style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;">
+                <span class="input-new">....................................................................</span>            
+            </span>
+            </span>  
+            <span>gksxkA</span> 
+        </span>  
+        </p>
+        <ol style="list-style-type: undefined;margin-left:0.25in;">
+        <li><span style="line-height:120%;font-family:&quot;Kruti Dev 010&quot;;">ukekarj.k 'kqYd fnukad </span><strong><span style="line-height:115%;;;">&nbsp;<span class="input-new"><strong><input type="text" class="testing dinank1" name="namantaran[nama_dinank]" value="<%= @namantaran.nama_dinank %>"></strong></span></span></strong><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;"> dEI;wVjkbt@ikorh Ø-&nbsp;</span><strong><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;"><span class="input-new c-pavati" style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;"><strong><input type="text" class="testing c-pavati" name="namantaran[pavati_no]" value="<%= @namantaran.pavati_no %>"></strong></span></span></strong><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;font-size:13px;">&nbsp;राशि&nbsp;</span><strong><span style=";"><span class="input-new"><strong><input type="text" class="testing" name="namantaran[nama_rashi]" value="<%= @namantaran.nama_rashi %>"></strong></span></span></strong><span style="line-height:115%;;;">/-</span></li>
+        <li><span style="line-height:120%;font-family:&quot;Kruti Dev 010&quot;;">jtqokr 'kqYd fnukad</span><strong><span style="line-height:115%;;;">&nbsp;<span class="input-new"><strong><input type="text" class="testing dinank1" name="namantaran[rujwat_dinank]" value="<%= @namantaran.rujwat_dinank %>"></strong></span></span></strong><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">&nbsp;dEI;wVjkbt@ikorh Ø-&nbsp;</span><strong><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;"><span class="input-new c-pavati" style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;;"><strong><input type="text" class="testing c-pavati1" value="<%= @namantaran.pavati_no %>"></strong></span></span></strong><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;font-size:13px;">&nbsp;राशि&nbsp;</span><strong><span style=";"><span class="input-new"><strong><input type="text" class="testing" name="namantaran[rujwat_rashi]" value="<%= @namantaran.rujwat_rashi %>"></strong></span></span></strong><span style="line-height:115%;;;">/-</span><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">-</span></li>
+        </ol>
+        <p style="margin-top:0.05in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height:115%;"><strong><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">laifRr dk fooj.k %</span></strong></p>
+        <ol style="list-style-type: undefined;">
+        <li id="tal"><span style="font-family:&quot;Kruti Dev 010&quot;;">ry eafty O;olkf;d@jgoklh vkj-lh-lh- &nbsp;</span><strong><span style="line-height:115%;;;"><span class="input-new"><strong>
+            <input type="text" class="testing tal" name="namantaran[tal]" value="<%= @namantaran.tal %>">
+        </strong></span></span></strong></li>
+        <li id="prathm"><span style="font-family:&quot;Kruti Dev 010&quot;;">izFke eafty jgoklh vkj-lh-lh-&nbsp;</span><strong><span style="line-height:115%;;;"><span class="input-new"><strong>
+            <input type="text" class="testing prathm" name="namantaran[prathm]" value="<%= @namantaran.prathm %>">
+        </strong></span></span></strong></li>
+        <li id="divitiya"><span style="font-family:&quot;Kruti Dev 010&quot;;">f}rh; eafty jgoklh vkj-lh-lh-&nbsp;</span><strong><span style="line-height:115%;;;"><span class="input-new"><strong>
+            <input type="text" class="testing divitiya" name="namantaran[divitiya]" value="<%= @namantaran.divitiya %>">
+        </strong></span></span></strong></li>
+        <li id="tritiya"><span style="line-height:115%;;;color:#222222;background:white;font-size:12px;">तृतीय</span><span style="font-family:&quot;Kruti Dev 010&quot;;">&nbsp;eafty jgoklh vkj-lh-lh-&nbsp;</span><strong><span style="line-height:115%;;;"><span class="input-new"><strong>
+            <input type="text" class="testing tritiya" name="namantaran[tritiya]" value="<%= @namantaran.tritiya %>">
+        </strong></span></span></strong></li>
+        <li id="other"><span style="font-family:&quot;Kruti Dev 010&quot;;"></span><strong><span style="line-height:115%;;;"><span class="input-new"><strong>
+            <input type="text" class="testing other" name="namantaran[other]" value="<%= @namantaran.other %>">
+        </strong></span></span></strong></li>
+        </ol>
+        <p style="margin-top:0.05in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height:115%;"><strong><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">uksV %</span></strong></p>
+        <ol style="list-style-type: undefined;">
+        <li><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">;g ukekUrj.k dsoy dj laXkzg.k ds&nbsp;<span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;font-size:12px;">उद्देश्य</span>&nbsp;ds fy;s gh fd;k x;k gSA</span></li>
+        <li><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">vlR; tkudkjh nsdj djk;k x;k ukekarj.k Lor% fujLr ekuk tkosxkA &nbsp; &nbsp;</span></li>
+        <li><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">vius Hkou ds ckgj Hkou uacj dk izn’kZu vo’; djsaA</span></strong></li>
+        </ol>
+        <div style="text-align: center;">
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:.6in;line-height:115%;"><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<strong>lgk;d jktLo vf/kdkjh</strong>&nbsp;</span></p>
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:.25in;line-height:115%;"><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><strong><span style="font-family:&quot;Kruti Dev 010&quot;;">bUnkSj uxj ikfydk fuxe</span></strong></p>
+        <p style="margin-top:0in;margin-right:0.1in;margin-bottom:.0001pt;margin-left:0in;line-height:115%;"><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><strong><span style="font-family:&quot;Kruti Dev 010&quot;;">&gt;ksu Ø- 14</span></strong></p>
+        </div>
+        <p style="margin-top:0.05in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height:115%;"><strong><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">izfrfyfi %</span></strong></p>
+        <p style="margin-top:0.05in;margin-right:0in;margin-bottom:6.0pt;margin-left:0in;line-height:115%;"><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">&nbsp; &nbsp; &nbsp; &nbsp;Øekad -----------------------------</span></p>
+        <div style="margin-top:0.05in;margin-right:0in;margin-bottom:10.0pt;margin-left:0in;line-height:115%;">
+        <ol style="margin-bottom:0in;list-style-type: undefined;">
+            <li style="margin-top:0.05in;margin-right:0in;margin-bottom:10.0pt;margin-left:0in;line-height:115%;"><span style="font-family:&quot;Kruti Dev 010&quot;;">mik;qDr ¼vlslesaV ,oa losZ½ dh tkudkjh ,oa lacaf/kr ds [kkrs esa vko’;d&nbsp;<br>&nbsp;nq:Lrh djus ds vkns’kkFkZ gsrq izLrqr &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></li>
+        </ol>
+        </div>
+        <div style="text-align: center;">
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:.6in;line-height:115%;"><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<strong>lgk;d jktLo vf/kdkjh</strong>&nbsp;</span></p>
+        <p style="margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:.25in;line-height:115%;"><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><strong><span style="font-family:&quot;Kruti Dev 010&quot;;">bUnkSj uxj ikfydk fuxe</span></strong></p>
+        <p style="margin-top:0in;margin-right:0.1in;margin-bottom:.0001pt;margin-left:0in;line-height:115%;"><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><strong><span style="font-family:&quot;Kruti Dev 010&quot;;">&gt;ksu Ø- 14</span></strong></p>
+        </div>
+        <%= form.submit 'FINAL SAVE KARDO', style: "float: right", class: 'final-save' %>
+        <% end %>
+        </div>
+    
+    
+        <button class="preview">Preview Dekhlo</button>
+        <button class="edit" style="display: none;">Edit Preview</button>
+        <button class="final-preview" style="display: none; float: right;">PRINT PAGE</button>
+        <script type="text/javascript">
+        $(document).ready(function(){	
+            $('.add').on('click', add);
+            $('.remove').on('click', remove);
+        
+        function add() {
+            var new_chq_no = parseInt($('#total_chq').val()) + 1;
+            var new_input = "<input type='text' id='new_" + new_chq_no + "'><br/>";
+        var  new_input = "<p style='margin-top:0.05in;margin-right:0in;margin-bottom:.0001pt;margin-left:0.5in;line-height:115%;font-family:'Calibri','sans-serif';text-indent:.5in;'><strong><span style='line-height:115%;color:#222222;background:white;'><span class='input-new'><strng><input type='text' class='testing ka-naam-ankit' id='new_" + new_chq_no + "'></strong><span></span></strong><span style='font-family:'Arial','sans-serif';color:#222222;background:white;'>&nbsp;</span></p>"
+            $('#new_chq').append(new_input);
+            
+            $('#total_chq').val(new_chq_no);
+        }
+        
+        function remove() {
+            var last_chq_no = $('#total_chq').val();
+        
+            if (last_chq_no > 1) {
+            $('#new_' + last_chq_no).remove();
+            $('#total_chq').val(last_chq_no - 1);
+            }
+        }
+        
+        $('.preview').on('click', function(){
+            $('.add').hide()
+            $('.remove').hide()
+            $('.testing').each(function( index, ele ) {
+                var valu = $(ele).val().replace(/^\s+|\s+$/gm,'');
+                var paret = $(ele).parent().parent()
+                paret.append("<span class='testing-valu'>"+ valu +"</span>")
+                $(ele).hide()    
+            });
+        
+            if($('.tal').val() === ''){
+                $('#tal').remove()
+            }
+            if($('.prathm').val() === ''){
+                $('#prathm').remove()
+            }
+            if($('.divitiya').val() === ''){
+                $('#divitiya').remove()
+            }
+            if($('.tritiya').val() === ''){
+                $('#tritiya').remove()
+            }
+            if($('.other').val() === ''){
+            $('#other').remove()
+            }
+            
+            var checkBox = $("#newAccountCheck");
+            if (checkBox.is(":checked")){
+            $('.new-account-label').show()
+            checkBox.hide();
+            } else {
+            $('.new-account-label').hide()
+            checkBox.hide();
+            }
+            $(this).hide()
+            $('.edit').show()
+            $('.final-preview').show()
+            $('.final-save').hide()
+        })
+
+        $('.edit').on('click', function(){
+            $('.preview').show();
+            $('.testing-valu').remove()
+            $('.testing').show()
+            $(this).hide()
+            $('.final-preview').hide()
+            $('.final-save').show()
+            $('.add').show()
+            $('.remove').show()
+            $("#newAccountCheck").show();
+            $('.new-account-label').show();
+        });
+        
+        $('.flat-no').on('blur', function(){
+            $('.flat-no1').val($(this).val())
+            $('.flat-no2').val($(this).val())
+        })
+        
+        $('.mohalla').on('blur', function(){
+            $('.mohalla1').val($(this).val())
+            $('.mohalla2').val(`, ${$(this).val()}`)
+        })
+        
+        $('.pavati').on('blur', function(){
+            $('.pavati1').val($(this).val())
+        })
+        
+        $('.c-pavati').on('blur', function(){
+            $('.c-pavati1').val($(this).val())
+        })
+
+        $('.dinank').on('blur', function(){
+            $('.dinank1').val($(this).val())
+        })
+        
+        
+        $('.book').on('blur', function(){
+            $('.book1').val($(this).val())
+        })
+        
+        $('#new_chq').on('blur', '.ka-naam-ankit', function(){
+            var kaNaamAnkit = []
+            $("#new_chq .ka-naam-ankit").each(function() {
+                kaNaamAnkit.push($(this).val());
+            });
+            $('#ka-naam-ankit1').val(kaNaamAnkit.join(", "))
+        })
+        })
+
+        $('.final-preview').on('click', function(){
+            $('.edit').hide()
+            $('.preview').hide()
+            $(this).hide()
+            window.print()
+        });
+
+        $('#newAccountCheck').on('click', function(){
+            if ($(this).is(":checked")){
+            $('.flat2-mohalla2').show()
+            $('.no-flat2-mohalla2').hide()
+            } else {
+            $('.flat2-mohalla2').hide()
+            $('.no-flat2-mohalla2').show()
+            }
+        });
+        
+        </script>
+    </body>      
+</html>
