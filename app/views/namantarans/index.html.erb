@@ -11,17 +11,29 @@
  
 
 <div id="namantaran1s">
-  <table>
-    <tr>
-      <th><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">&nbsp;% IykV@edkua@¶ySV ua-&nbsp;</span></th>
-      <th><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">&nbsp;lfoZl ua-@fiu ua-&nbsp;</span></th>
-      <th><span style="font-family:&quot;Kruti Dev 010&quot;;">dk uke vafdr fd;k x;k gSA</span></th>
-      <th></th>
-    </tr>
-    <% @namantarans.each do |namantaran| %>
-      <%= render namantaran %>
-    <% end %>
+  <table class='namantaran1s'>#
+    <thead>
+      <tr>
+        <th><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">ua-&nbsp;</span></th>
+        <th><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">&nbsp;% IykV@edkua@¶ySV ua-&nbsp;</span></th>
+        <th><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">&nbsp;lfoZl ua-@fiu ua-&nbsp;</span></th>
+        <th><span style="font-family:&quot;Kruti Dev 010&quot;;">dk uke vafdr fd;k x;k gSA</span></th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @namantarans.each_with_index do |namantaran, i| %>
+        <%= render partial: namantaran, locals: { page_no: i+1 } %>
+      <% end %>
+    </tbody>
   </table>
 </div>
+
+<script>
+$(document).ready( function () {
+  $('.namantaran1s').DataTable();
+});    
+</script>
+
 
 

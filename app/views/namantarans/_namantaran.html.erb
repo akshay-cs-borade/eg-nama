@@ -2,6 +2,11 @@
   <tr>
     <td>
       <span style="font-family:&quot;Kruti Dev 010&quot;;">
+        <%= page_no %>
+      </span>  
+    </td>
+    <td>
+      <span style="font-family:&quot;Kruti Dev 010&quot;;">
         <%= namantaran.flat_no %>
       </span>  
     </td>
@@ -16,7 +21,9 @@
       </span>  
     </td>
     <td>
-    <%= link_to "Edit", edit_namantaran_path(namantaran) %>
+      <a href="<%= edit_namantaran_path(namantaran) %>">
+        <button class="button blue" style='padding: 5px 15px; font-size: 15px;'>Edit</button>
+      </a>
     </td>
   </tr>
 </div>
