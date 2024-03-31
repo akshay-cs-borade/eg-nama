@@ -3,9 +3,7 @@
 <h1>Namantarans</h1>
 
 <div>
-  <a href="<%= new_namantaran_path %>">
-    <button class="edit button blue">Add New</button>
-  </a>
+  <%= button_to "Add New", { action: "create" }, class: "edit button blue" %>
 </div> 
 <br/> 
  

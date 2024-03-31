@@ -21,14 +21,11 @@ class NamantaransController < ApplicationController
 
   # POST /namantarans or /namantarans.json
   def create
-    @namantaran = Namantaran.new(namantaran_params)
-
-    respond_to do |format|
-      if @namantaran.save
-        format.html { redirect_to edit_namantaran_url(@namantaran), notice: "namantaran was successfully created." }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-      end
+    @namantaran = Namantaran.new
+    if @namantaran.save
+      redirect_to namantaran_step_path(@namantaran, :page1)
+    else
+      format.html { render :new, status: :unprocessable_entity }
     end
   end
 

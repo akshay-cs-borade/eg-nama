@@ -4,5 +4,11 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "namantarans#index"
 
-  resources :namantarans
+
+  resources :namantarans do
+    resources :steps, only: [:show, :update]
+  end
+
+  # custom para usar cells
+  post 'namantarans/:namantaran_id/steps/:step' => 'steps#update'
 end
