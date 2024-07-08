@@ -4,7 +4,15 @@ class StepsController < ApplicationController
   steps :page1, :page2, :page3, :page4 
 
   def show
-    render_wizard
+    respond_to do |format|
+      format.html { render_wizard }
+      format.pdf do
+        render pdf: "#{step}",
+               template: "steps/#{step}",
+               layout: 'pdf',
+               page_size: 'A4'
+      end
+    end
   end
 
   def update

@@ -27,4 +27,7 @@ WickedPdf.configure do |config|
   # 'xvfb-run' command, in order to simulate an X server.
   #
   # config.use_xvfb = true,
+  WickedPdf.config = {
+    exe_path: Gem.bin_path('wkhtmltopdf-binary', 'wkhtmltopdf')
+  }
 end

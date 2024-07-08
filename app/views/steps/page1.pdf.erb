@@ -5,7 +5,7 @@
     <meta name=Generator content="Microsoft Word 15 (filtered)">
     <style>
         /* Font Definitions */
-         @font-face
+        @font-face
         	{font-family:Mangal;
         	panose-1:2 4 5 3 5 2 3 3 2 2;}
         @font-face
@@ -18,7 +18,11 @@
         	{font-family:"Segoe UI";
         	panose-1:2 11 5 2 4 2 4 2 2 3;}
         @font-face
-        	{font-family:"Kruti Dev 010";}
+        	{
+                font-family:"Kruti Dev 010";
+                font-style: normal;
+                font-weight: 300;
+            }
          /* Style Definitions */
         li.MsoNormal, div.MsoNormal
         	{margin-top:0in;
@@ -109,17 +113,17 @@
         .print:last-child {
              page-break-after: auto;
         }
-        .testing-valu{
-            font-weight: bold;
+        body {
+            padding-top: 10px;
+            font-family: 'Kruti Dev 010', sans-serif;
         }
     </style>
-</head>
 
+</head>
 <body lang=EN-US style='word-wrap:break-word'>
-    <%= render layout: 'form' do |namantaran| %>
+    <%#= render layout: 'form' do |namantaran| %>
         <div class=WordSection1>
-            <p class=MsoNormal align=center style='text-align:center'><span style='font-size:24.0pt;line-height:95%;font-family:"Kruti Dev 010"'>bUnkSj
-    uxj ikfydk fuxe bUnkSj</span></p>
+            <p class=MsoNormal align=center style='text-align:center'><span style='font-size:24.0pt;line-height:95%;font-family:"Kruti Dev 010"'>इंदौर नगर पालिका निगम</span></p>
             <div style="display: grid;">
                 <p class=MsoNormal>
                     <span style='font-size:18.0pt;line-height:95%;font-family:
@@ -150,14 +154,14 @@
                     <span style='font-size:18.0pt;line-height:95%;font-family:"Kruti Dev 010"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fo&quot;k; % 
 <span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">IykV@edkua@¶ySV ua-&nbsp;</span>
                     <strong><span style=";"><span class="input-new"><strong>
-<input type="text" class="testing flat-no" name="namantaran[flat_no]" value="<%= @namantaran.flat_no %>">
+<%= @namantaran.flat_no %>
 </strong></span>&nbsp;&nbsp;</span>
                     </strong><strong><span style="font-family:&quot;Kruti Dev 010&quot;;">&nbsp;</span></strong>
                     <span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">
 eksgYyk&nbsp;</span><span style="line-height:115%;">%</span><strong>
 <span style="line-height:115%;;color:#222222;background:white;">
 <span class="input-new"><strong>
-<input type="text" class="testing mohalla" name="namantaran[mohalla]" value="<%= @namantaran.mohalla %>">
+<%= @namantaran.mohalla %>
 </strong></span>
                     </span>
                     </strong>
@@ -171,32 +175,32 @@ style='font-size:18.0pt;line-height:95%;font-family:"Kruti Dev 010"'>izLrko
                     <p class=MsoNormal><span style='font-size:18.0pt;line-height:95%;font-family:
 "Kruti Dev 010"'>          </span><span style='font-size:18.0pt;line-height:
 130%;font-family:"Kruti Dev 010"'>mijksDr fo&quot;k;d ys[k gS fd Hkw[k.M
-Ø-@Hkou Ø- <span class="input-new"><strong><input type="text" class="testing flat-no1" name="namantaran[flat_no]" value="<%= @namantaran.flat_no %>"></strong></span> eksgYyk
-<span class="input-new"><strong><input type="text" class="testing mohalla1" name="namantaran[mohalla]" value="<%= @namantaran.mohalla %>"></strong></span>
-lfoZl Øekad <span class="input-new"><strong><input type="text" class="testing" name="namantaran[pin_no]" value="<%= @namantaran.pin_no %>"></strong></span> ds laifRrdj
+Ø-@Hkou Ø- <%= @namantaran.flat_no %> eksgYyk
+<%= @namantaran.mohalla %>
+lfoZl Øekad <%= @namantaran.pin_no %> ds laifRrdj
 fjdkMZ esa uke ifjorZu gsrq vkosnu ds uke ifjorZu pkgk x;k gSA</span></p>
 
                     <p class=MsoNormal><span style='font-size:18.0pt;line-height:95%;font-family:
-"Kruti Dev 010"'>vkod Øekad <span class="input-new"><strong><input type="text" class="testing" name="namantaran[aawak_no]" value="<%= @namantaran.aawak_no %>"></strong></span> fnukad
-<span class="input-new"><strong><input type="text" class="testing dinank" name="namantaran[aawak_dinank]" value="<%= @namantaran.aawak_dinank %>"></strong></span> dks vkosnu fd;k x;k gSA</span></p>
+"Kruti Dev 010"'>vkod Øekad <%= @namantaran.aawak_no %> fnukad
+<%= @namantaran.aawak_dinank %> dks vkosnu fd;k x;k gSA</span></p>
 
                     <div class=MsoNormal style='text-align:justify'><span style='font-size:18.0pt;
 line-height:95%;font-family:"Kruti Dev 010"'>vkosnd dk uke 
 <div id="new_chq">
   <% @namantaran&.ka_naam&.split(",")&.each_with_index do |kn, i|%>
     <p style="margin-top:0.05in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height:115%;text-indent:.5in;">
+      <strong>
         <span style="line-height:115%;;color:#222222;background:white;">
           <span class="input-new">
             <strong>
-              <input type="text" class="testing ka-naam-ankit" value="<%= kn %>">
+              <%= kn %>
             </strong>
           </span>
                         </span>
+                        </strong>
                         </p>
                         <% end %>
                             <p style="margin-top:0.05in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height:115%;text-indent:.5in;"><strong><span style="line-height:115%;;color:#222222;background:white;"><span class="input-new"><strong>
-  <input type="text" class="testing ka-naam-ankit">
-  <input type="hidden" id="ka-naam-ankit1" name="namantaran[ka_naam]" value="<%= @namantaran.ka_naam %>">
 </strong></span>
                                 </span>
                                 </strong>
@@ -204,26 +208,21 @@ line-height:95%;font-family:"Kruti Dev 010"'>vkosnd dk uke
                     </div>
                     <div>&nbsp;
                         <div>
-                            <input type="hidden" value="1" id="total_chq">
                         </div>
                     </div>
                     <div>
-                        <a href="javascript:void(0);" class="add" style='font-size:18.0pt;
-  line-height:95%;font-family:"sans-serif"'>Add</a>
-                        <a href="javascript:void(0);" class="remove" style='font-size:18.0pt;
-  line-height:95%;font-family:"sans-serif"'>Remove</a>
                     </div>
                     <p class=MsoNormal><span style='font-size:18.0pt;line-height:95%;font-family:
 "Kruti Dev 010"'>laifRr dk irk tgk ukekUrj.k fd;k tkuk
 <span style='font-size:18.0pt;line-height:
-130%;font-family:"Kruti Dev 010"'>Hkw[k.M Ø-@Hkou Ø- <span class="input-new"><strong><input type="text" class="testing flat-no1" name="namantaran[flat_no]" value="<%= @namantaran.flat_no %>"></strong></span> eksgYyk
-<span class="input-new"><strong><input type="text" class="testing mohalla1" name="namantaran[mohalla]" value="<%= @namantaran.mohalla %>"></strong></span></span></span>
+130%;font-family:"Kruti Dev 010"'>Hkw[k.M Ø-@Hkou Ø- <%= @namantaran.flat_no %> eksgYyk 
+<%= @namantaran.mohalla %></span></span>
                         </span>
                     </p>
 
                     <p class=MsoNormal><span style='font-size:18.0pt;line-height:95%;font-family:
 "Kruti Dev 010"'>fuxe ds lEifRrdj jsdkMZ esa Jh@Jherh
-<span class="input-new"><strong><input type="text" class="testing k-sthan-par1" id="k-sthan-par1" name="namantaran[sthan_par]" value="<%= @namantaran.sthan_par %>"></strong></span>
+<%= @namantaran.sthan_par %>
 dk uke fjdkMZ esa ntZ gksdj fyad dk feyku gksrk gSA</span></p>
                 </div>
                 <div style="display: grid;">
@@ -299,10 +298,7 @@ lang=HI style='font-family:"Mangal",serif;color:#222222;background:white'>अन
 प्रसारित)</span></b></p>
 
         </div>
-        <% end %>
-        <button class="preview button blue">Preview Dekhlo</button>
-        <button class="edit button red" style="display: none;">Edit Preview</button>
-        <button class="final-preview button green" style="display: none; float: right;">PRINT PAGE</button>
+        <%# end %>
             <script>
                 $(document).ready(function(){	
                             $('.add').on('click', add);
@@ -418,7 +414,6 @@ lang=HI style='font-family:"Mangal",serif;color:#222222;background:white'>अन
                         $('.final-preview').on('click', function(){
                             $('.edit').hide()
                             $('.preview').hide()
-                            $('.continue-action').hide()
                             $(this).hide()
                             window.print()
                         });

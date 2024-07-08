@@ -49,6 +49,9 @@
         div.WordSection1
         	{page:WordSection1;}
         -->
+        .testing-valu{
+            font-weight: bold;
+        }
     </style>
 
 </head>
@@ -65,22 +68,22 @@ font-family:"Kruti Dev 010"'>jktLo vf/kdkjh egksn; </span></p>
 
                 <p class=MsoNormal><span lang=EN-IN style='font-size:16.0pt;line-height:115%;
 font-family:"Kruti Dev 010"'><span style='font-size:18.0pt;line-height:
-130%;font-family:"Kruti Dev 010"'>Hkw[k.M Ø-@Hkou Ø- <input type="text" class="testing flat-no" name="namantaran[flat_no]" value="<%= @namantaran.flat_no %>"> eksgYyk
-<input type="text" class="testing mohalla" name="namantaran[mohalla]" value="<%= @namantaran.mohalla %>"></span></span>
+130%;font-family:"Kruti Dev 010"'>Hkw[k.M Ø-@Hkou Ø- <span class="input-new"><strong><input type="text" class="testing flat-no" name="namantaran[flat_no]" value="<%= @namantaran.flat_no %>"></strong></span> eksgYyk
+<span class="input-new"><strong><input type="text" class="testing mohalla" name="namantaran[mohalla]" value="<%= @namantaran.mohalla %>"></strong></span></span></span>
                     </span>&nbsp;&nbsp;<span lang=EN-IN style='font-size:16.0pt;line-height:115%;
 font-family:"Kruti Dev 010"'>ukekUrju foHkktu ckcnA</span></p>
 
                 <p class=MsoNormal><span lang=EN-IN style='font-size:16.0pt;line-height:115%;
-font-family:"Kruti Dev 010"'><input type="text" class="testing ka-naam-ankit1" id="ka-naam-ankit1" name="namantaran[ka_naam]" value="<%= @namantaran.ka_naam %>"></span>
+font-family:"Kruti Dev 010"'><span class="input-new"><strong><input type="text" class="testing ka-naam-ankit1" id="ka-naam-ankit1" name="namantaran[ka_naam]" value="<%= @namantaran.ka_naam %>"></strong></span></span>
                     <span lang=HI style='font-size:14.0pt;line-height:115%;font-family:"Kokila",sans-serif'>का
 आवेदन</span>&nbsp;&nbsp;<span lang=EN-IN style='font-size:
 16.0pt;line-height:115%;font-family:"Kruti Dev 010"'>vkod
-Øekad <input type="text" class="testing" name="namantaran[aawak_no]" value="<%= @namantaran.aawak_no %>"> fnukad <input type="text" class="testing dinank" name="namantaran[aawak_dinank]" value="<%= @namantaran.aawak_dinank %>"> dk e; jftLVMZ
+Øekad <span class="input-new"><strong><input type="text" class="testing" name="namantaran[aawak_no]" value="<%= @namantaran.aawak_no %>"></strong></span> fnukad <span class="input-new"><strong><input type="text" class="testing dinank" name="namantaran[aawak_dinank]" value="<%= @namantaran.aawak_dinank %>"></strong></span> dk e; jftLVMZ
 ys[k Øekad dk voyksdu dhft,A</span></p>
 
                 <p class=MsoNormal style='margin-bottom:0in'><span lang=EN-IN style='font-size:
 16.0pt;line-height:115%;font-family:"Kruti Dev 010"'>mDr edku dj olwyh esa
-<input type="text" class="testing k-sthan-par1" id="k-sthan-par1" name="namantaran[sthan_par]" value="<%= @namantaran.sthan_par %>">
+<span class="input-new"><strong><input type="text" class="testing k-sthan-par1" id="k-sthan-par1" name="namantaran[sthan_par]" value="<%= @namantaran.sthan_par %>"></strong></span>
 ds uke ls vafdr gksdj fuEekuqlkj okf’kZd dj gSA</span></p>
 
                 <p class=MsoNormal><span lang=EN-IN style='font-size:16.0pt;line-height:115%;
@@ -223,11 +226,11 @@ font-family:"Kruti Dev 010"'>       DydZ                 l
 16.0pt;line-height:115%;font-family:"Kruti Dev 010"'>vk;qDr egksn;]</span></p>
 
                 <p class=MsoNormal><span lang=EN-IN style='font-size:16.0pt;line-height:115%;
-font-family:"Kruti Dev 010"'>      vr% mDr i=ksas ds vk/kkj ij Hkw-ua-@e-ua <input type="text" class="testing flat-no" name="namantaran[flat_no]" value="<%= @namantaran.flat_no %>">
-eksgYyk <input type="text" class="testing mohalla" name="namantaran[mohalla]" value="<%= @namantaran.mohalla %>">
+font-family:"Kruti Dev 010"'>      vr% mDr i=ksas ds vk/kkj ij Hkw-ua-@e-ua <span class="input-new"><strong><input type="text" class="testing flat-no" name="namantaran[flat_no]" value="<%= @namantaran.flat_no %>"></strong></span>
+eksgYyk <span class="input-new"><strong><input type="text" class="testing mohalla" name="namantaran[mohalla]" value="<%= @namantaran.mohalla %>"></strong></span>
 ij
 <span lang=EN-IN style='font-size:16.0pt;line-height:115%;
-font-family:"Kruti Dev 010"'><input type="text" class="testing ka-naam-ankit1" id="ka-naam-ankit1" name="namantaran[ka_naam]" value="<%= @namantaran.ka_naam %>"></span></span>
+font-family:"Kruti Dev 010"'><span class="input-new"><strong><input type="text" class="testing ka-naam-ankit1" id="ka-naam-ankit1" name="namantaran[ka_naam]" value="<%= @namantaran.ka_naam %>"></strong></span></span></span>
                 </p>
 
                 <p class=MsoNormal style='margin-bottom:0in'><span lang=EN-IN style='font-size:
@@ -254,6 +257,140 @@ font-family:"Kruti Dev 010"'>bUnkSj uxj ikfydk fuxe </span></p>
             </div>
         </div>
         <% end %>
+        <button class="preview button blue">Preview Dekhlo</button>
+        <button class="edit button red" style="display: none;">Edit Preview</button>
+        <button class="final-preview button green" style="display: none; float: right;">PRINT PAGE</button>    
 </body>
+<script>
+$(document).ready(function(){	
+            $('.add').on('click', add);
+            $('.remove').on('click', remove);
+        
+        function add() {
+            var new_chq_no = parseInt($('#total_chq').val()) + 1;
+            var new_input = "<input type='text' id='new_" + new_chq_no + "'><br/>";
+        var  new_input = "<p style='margin-top:0.05in;margin-right:0in;margin-bottom:.0001pt;margin-left:0.5in;line-height:115%;font-family:'Calibri','sans-serif';text-indent:.5in;'><strong><span style='line-height:115%;color:#222222;background:white;'><span class='input-new'><strong><input type='text' class='testing ka-naam-ankit' id='new_" + new_chq_no + "'></strong><span></span></strong><span style='font-family:'Arial','sans-serif';color:#222222;background:white;'>&nbsp;</span></p>"
+            $('#new_chq').append(new_input);
+            
+            $('#total_chq').val(new_chq_no);
+        }
+        
+        function remove() {
+            var last_chq_no = $('#total_chq').val();
+        
+            if (last_chq_no > 1) {
+            $('#new_' + last_chq_no).remove();
+            $('#total_chq').val(last_chq_no - 1);
+            }
+        }
+        
+        $('.preview').on('click', function(){
+            $('form').submit(false);
+            $('.add').hide()
+            $('.remove').hide()
+            $('.testing').each(function( index, ele ) {
+                var valu = $(ele).val().replace(/^\s+|\s+$/gm,'');
+                var paret = $(ele).parent().parent()
+                paret.append("<span class='testing-valu'>"+ valu +"</span>")
+                $(ele).hide()    
+            });
+        
+            if($('.tal').val() === ''){
+                $('#tal').remove()
+            }
+            if($('.prathm').val() === ''){
+                $('#prathm').remove()
+            }
+            if($('.divitiya').val() === ''){
+                $('#divitiya').remove()
+            }
+            if($('.tritiya').val() === ''){
+                $('#tritiya').remove()
+            }
+            if($('.other').val() === ''){
+            $('#other').remove()
+            }
+            
+            var checkBox = $("#newAccountCheck");
+            if (checkBox.is(":checked")){
+            $('.new-account-label').show()
+            checkBox.hide();
+            } else {
+            $('.new-account-label').hide()
+            checkBox.hide();
+            }
+            $(this).hide()
+            $('.edit').show()
+            $('.final-preview').show()
+        })
 
+        $('.edit').on('click', function(){
+            $('form').submit(false);
+            $('.preview').show();
+            $('.testing-valu').remove()
+            $('.testing').show()
+            $(this).hide()
+            $('.final-preview').hide()
+            $('.add').show()
+            $('.remove').show()
+            $("#newAccountCheck").show();
+            $('.new-account-label').show();
+        });
+        
+        $('.flat-no').on('blur', function(){
+            $('.flat-no1').val($(this).val())
+            $('.flat-no2').val($(this).val())
+        })
+        
+        $('.mohalla').on('blur', function(){
+            $('.mohalla1').val($(this).val())
+            $('.mohalla2').val(`, ${$(this).val()}`)
+        })
+        
+        $('.pavati').on('blur', function(){
+            $('.pavati1').val($(this).val())
+        })
+        
+        $('.c-pavati').on('blur', function(){
+            $('.c-pavati1').val($(this).val())
+        })
+
+        $('.dinank').on('blur', function(){
+            $('.dinank1').val($(this).val())
+        })
+        
+        
+        $('.book').on('blur', function(){
+            $('.book1').val($(this).val())
+        })
+        
+        $('#new_chq').on('blur', '.ka-naam-ankit', function(){
+            var kaNaamAnkit = []
+            $("#new_chq .ka-naam-ankit").each(function() {
+                kaNaamAnkit.push($(this).val());
+            });
+            $('#ka-naam-ankit1').val(kaNaamAnkit.join(", "))
+        })
+        })
+
+        $('.final-preview').on('click', function(){
+            $('.edit').hide()
+            $('.preview').hide()
+            $('.continue-action').hide()
+            $(this).hide()
+            window.print()
+        });
+
+        $('#newAccountCheck').on('click', function(){
+            if ($(this).is(":checked")){
+            $('.flat2-mohalla2').show()
+            $('.no-flat2-mohalla2').hide()
+            $('#new_account').val(true);
+            } else {
+            $('.flat2-mohalla2').hide()
+            $('.no-flat2-mohalla2').show()
+            $('#new_account').val(false);
+            }
+        });
+</script>
 </html>

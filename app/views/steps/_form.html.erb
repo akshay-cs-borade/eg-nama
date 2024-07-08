@@ -1,7 +1,7 @@
 <%= form_for @namantaran, url: wizard_path do |f| %>
     <%= yield f %>
 
-    <div class="actions">
+    <div class="actions continue-action">
         <%= f.submit "Continue" %>
         or <%= link_to "skip this step", next_wizard_path %>
     </div>
