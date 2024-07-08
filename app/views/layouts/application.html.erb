@@ -15,6 +15,23 @@
   </head>
 
   <body>
+    <div>
+      <p style="margin-top:0.05in;margin-right:0in;margin-bottom:10.0pt;margin-left:0in;line-height:115%;">
+        <a href="<%= namantarans_path %>">
+          <button class="edit button green" style="float: right;">Listing</button>
+        </a>
+        <% if @namantaran.present? %>
+          <% ['page1', 'page2', 'page3', 'page4'].each do |page| %>  
+            <% unless page.eql?(params[:id]) %> 
+              <a href="<%= namantaran_step_path(@namantaran, page) %>">
+                <button class="edit button green" style="float: right;"><%= page %></button>
+              </a>
+            <% end %>  
+          <% end %>  
+        <% end %>
+      </p>
+    </div>
+  
     <div style='display: inline-block;'>
       <%= yield %>
     </div>  
