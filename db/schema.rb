@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_01_26_072808) do
+ActiveRecord::Schema[7.0].define(version: 2024_07_08_121808) do
   create_table "namantarans", force: :cascade do |t|
     t.string "flat_no"
     t.string "mohalla"
@@ -36,6 +36,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_26_072808) do
     t.boolean "new_account", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "rujwat_no"
   end
 
 end
