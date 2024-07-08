@@ -18,6 +18,10 @@ class CreateNamantarans < ActiveRecord::Migration[7.0]
       t.string :divitiya
       t.string :tritiya
       t.string :other
+      t.string :jalkar_pin
+      t.string :kachara_pin
+      t.string :jahir_suchna_patr
+      t.string :jahir_suchna_dinank  
       t.boolean :new_account, default: false   
 
       t.timestamps

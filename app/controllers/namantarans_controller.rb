@@ -13,6 +13,7 @@ class NamantaransController < ApplicationController
   # GET /namantarans/new
   def new
     @namantaran = Namantaran.new
+    @namantaran.save
   end
 
   # GET /namantarans/1/edit
@@ -33,7 +34,7 @@ class NamantaransController < ApplicationController
   def update
     respond_to do |format|
       if @namantaran.update(namantaran_params)
-        format.html { redirect_to edit_namantaran_url(@namantaran), notice: "namantaran was successfully updated." }
+        format.html { redirect_to namantaran_step_path(@namantaran, :page4), notice: "namantaran was successfully updated." }
         format.json { render :show, status: :ok, location: @namantaran }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -60,6 +61,6 @@ class NamantaransController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def namantaran_params
-      params.require(:namantaran).permit(:flat_no, :pin_no, :aawak_no, :aawak_dinank, :sthan_par, :ka_naam, :nama_dinank, :pavati_no, :nama_rashi, :rujwat_dinank, :rujwat_rashi, :tal, :prathm, :divitiya, :tritiya, :other, :mohalla, :new_account)
+      params.require(:namantaran).permit(:flat_no, :pin_no, :aawak_no, :aawak_dinank, :sthan_par, :ka_naam, :nama_dinank, :pavati_no, :nama_rashi, :rujwat_dinank, :rujwat_rashi, :tal, :prathm, :divitiya, :tritiya, :other, :mohalla, :new_account, :jalkar_pin, :kachara_pin, :jahir_suchna_patr, :jahir_suchna_dinank)
     end
 end

@@ -29,6 +29,10 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_26_072808) do
     t.string "divitiya"
     t.string "tritiya"
     t.string "other"
+    t.string "jalkar_pin"
+    t.string "kachara_pin"
+    t.string "jahir_suchna_patr"
+    t.string "jahir_suchna_dinank"
     t.boolean "new_account", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

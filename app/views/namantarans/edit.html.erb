@@ -15,7 +15,7 @@
     </style>
   </head>
   
-    <body autocomplete="off">
+    <body>
         <div id="exportContent">
         <p style="margin-top:0.05in;margin-right:0in;margin-bottom:10.0pt;margin-left:0in;line-height:115%;">
         <a href="<%= namantarans_path %>">
@@ -58,7 +58,7 @@
         </strong>
         </p>
         <div id="new_chq">
-          <% @namantaran.ka_naam.split(",").each_with_index do |kn, i|%>
+          <% @namantaran&.ka_naam&.split(",")&.each_with_index do |kn, i|%>
             <p style="margin-top:0.05in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height:115%;text-indent:.5in;">
               <strong>
                 <span style="line-height:115%;;color:#222222;background:white;">
