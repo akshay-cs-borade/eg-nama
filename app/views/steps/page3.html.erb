@@ -51,6 +51,7 @@
         -->
         .testing-valu{
             font-weight: bold;
+            font-size: 16px;
         }
     </style>
 
@@ -204,7 +205,7 @@ style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;</span></span><span style
                 </table>
 
                 <p class=MsoNormal style='margin-bottom:0in'><span lang=EN-IN style='font-size:
-16.0pt;line-height:115%;font-family:"Kruti Dev 010";color:white'>mifufj</span><span lang=EN-IN style='font-size:16.0pt;line-height:115%;font-family:"Kruti Dev 010"'>mifufj{kd }kjk fufj{k.k fd;k A prq% lhek dk feyku gksrk gSA vr% ukekUrj djus esa vkifRr
+16.0pt;line-height:115%;font-family:"Kruti Dev 010";color:white'>mifufj</span><span lang=EN-IN style='font-size:16.0pt;line-height:115%;font-family:"Kruti Dev 010"'>mifufj{kd }kjk fufj{k.k fd;k A prq% lhek dk feyku gksrk gSA vr% ukekUrju djus esa vkifRr
 ugha gS A</span></p>
 
                 <p class=MsoNormal style='margin-bottom:0in'><span lang=EN-IN style='font-size:
@@ -291,7 +292,7 @@ $(document).ready(function(){
             $('.testing').each(function( index, ele ) {
                 var valu = $(ele).val().replace(/^\s+|\s+$/gm,'');
                 var paret = $(ele).parent().parent()
-                paret.append("<span class='testing-valu'>"+ valu +"</span>")
+                paret.append("<span style='line-height:115%;font-family:&quot;Kruti Dev 010;' class='testing-valu'>"+ valu +"</span>")
                 $(ele).hide()    
             });
         

@@ -77,6 +77,7 @@
         	{margin-bottom:0in;}
 		.testing-valu{
 			font-weight: bold;
+			font-size: 20px;
 		}	
     </style>
 
@@ -90,8 +91,8 @@
 tek jlhn dh izfr</span></p>
 
                 <p class="MsoNormal" style='margin-left:.25in;text-align:justify'><span style='font-size:20.0pt;line-height:100%;font-family:"Kruti Dev 010"'>jlhn ua-
-				<span class="input-new"><strong><input type="text" class="testing c-pavati" name="namantaran[pavati_no]" value="<%= @namantaran.pavati_no %>"></strong></span> fnukad <span class="input-new"><strong><input type="text" class="testing dinank1" name="namantaran[rujwat_dinank]" value="<%= @namantaran.rujwat_dinank %>"></strong></span> tek
-jkf’k <span class="input-new"><strong><input type="text" class="testing" name="namantaran[rujwat_rashi]" value="<%= @namantaran.rujwat_rashi %>"></strong></span></span></p>
+				<span class="input-new"><strong><input type="text" class="testing c-pavati" name="namantaran[pavati_no]" value="<%= @namantaran.pavati_no %>"></strong></span> fnukad <span class="input-new"><strong><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;"><input type="text" class="testing dinank1" name="namantaran[rujwat_dinank]" value="<%= @namantaran.rujwat_dinank %>"></span></strong></span> tek
+<span style="font-size: 19px;">राशि</span> <span class="input-new"><strong><input type="text" class="testing" name="namantaran[rujwat_rashi]" value="<%= @namantaran.rujwat_rashi %>"></strong></span></span><span style="line-height:115%; font-size: 14px;">/-</span></p>
 
                 <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-size:
 16.0pt;line-height:100%;font-family:"Kruti Dev 010"'>1-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
@@ -101,8 +102,8 @@ gS@ugh gS</span></p>
 
                 <p class="MsoNormal" style='margin-left:.25in'><span style='font-size:20.0pt;
 line-height:100%;font-family:"Kruti Dev 010"'>jlhn ua-
-<span class="input-new"><strong><input type="text" class="testing c-pavati" name="namantaran[pavati_no]" value="<%= @namantaran.pavati_no %>"></strong></span> fnukad <span class="input-new"><strong><input type="text" class="testing dinank1" name="namantaran[nama_dinank]" value="<%= @namantaran.nama_dinank %>"></strong></span> tek
-jkf’k <span class="input-new"><strong><input type="text" class="testing" name="namantaran[nama_rashi]" value="<%= @namantaran.nama_rashi %>"></strong></span>
+<span class="input-new"><strong><input type="text" class="testing c-pavati" name="namantaran[pavati_no]" value="<%= @namantaran.pavati_no %>"></strong></span> fnukad <span class="input-new"><strong><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;"><input type="text" class="testing dinank1" name="namantaran[nama_dinank]" value="<%= @namantaran.nama_dinank %>"></span></strong></span> tek
+<span style="font-size: 19px;">राशि</span> <span class="input-new"><strong><input type="text" class="testing" name="namantaran[nama_rashi]" value="<%= @namantaran.nama_rashi %>"></strong></span></span><span style="line-height:115%; font-size: 14px;">/-</span></p>
 <p class="MsoNormal" style='margin-left:.25in;text-align:justify'><span
 style='font-size:20.0pt;line-height:100%;font-family:"Kruti Dev 010"'>vkosnd
 }kjk mijksDr izLrqr nLrkostksa ds vk/kkj ij <span style='font-size:18.0pt;line-height:
@@ -136,7 +137,7 @@ gsrq izLrqrA</span></p>
 
                 <p class="MsoNormal" style='margin-left:2.5in'><span style='font-size:20.0pt;
 line-height:100%;font-family:"Kruti Dev 010"'>tkfgj lwpuk lekpkj i= <span class="input-new"><strong><input type="text" class="testing" name="namantaran[jahir_suchna_patr]" value="<%= @namantaran.jahir_suchna_patr %>"></strong></span> esa
-fnukad <span class="input-new"><strong><input type="text" class="testing" name="namantaran[jahir_suchna_dinank]" value="<%= @namantaran.jahir_suchna_dinank %>"></strong></span> dks izdkf’kr</span><span style='font-size:20.0pt;
+fnukad <span class="input-new"><strong><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;"><input type="text" class="testing" name="namantaran[jahir_suchna_dinank]" value="<%= @namantaran.jahir_suchna_dinank %>"></span></strong></span> dks izdkf’kr</span><span style='font-size:20.0pt;
 line-height:100%;font-family:"Kruti Dev 010"'>                                                                                     </span></p>
 
                 <p class="MsoNormal" style='margin-bottom:0in'><span style='font-size:20.0pt;
@@ -252,7 +253,7 @@ $(document).ready(function(){
 			$('.testing').each(function( index, ele ) {
 				var valu = $(ele).val().replace(/^\s+|\s+$/gm,'');
 				var paret = $(ele).parent().parent()
-				paret.append("<span class='testing-valu'>"+ valu +"</span>")
+				paret.append("<span style='line-height:115%;font-family:&quot;Kruti Dev 010;' class='testing-valu'>"+ valu +"</span>")
 				$(ele).hide()    
 			});
 		
