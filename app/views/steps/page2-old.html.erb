@@ -20,79 +20,51 @@
         @font-face
         	{font-family:"Kruti Dev 010";}
          /* Style Definitions */
-        li.MsoNormal, div.MsoNormal
+         p.MsoNormal, li.MsoNormal, div.MsoNormal
         	{margin-top:0in;
         	margin-right:0in;
         	margin-bottom:10.0pt;
         	margin-left:0in;
-        	line-height:95%;
-        	font-size:18.0pt;
+        	line-height:100%;
+        	font-size:20.0pt;
         	font-family:"Calibri",sans-serif;}
-        p.MsoNormal
-        	{margin-top:0in;
-        	margin-right:0in;
-        	margin-bottom:10.0pt;
-        	margin-left:0in;
-        	line-height:95%;
-        	font-family:"Calibri",sans-serif;}	
         p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
         	{margin-top:0in;
         	margin-right:0in;
         	margin-bottom:10.0pt;
         	margin-left:.5in;
-        	line-height:95%;
-        	font-size:18.0pt;
+        	line-height:100%;
+        	font-size:20.0pt;
         	font-family:"Calibri",sans-serif;}
-        p.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+        p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
         	{margin-top:0in;
         	margin-right:0in;
         	margin-bottom:0in;
         	margin-left:.5in;
-        	line-height:95%;
-        	font-size:18.0pt;
+        	line-height:100%;
+        	font-size:20.0pt;
         	font-family:"Calibri",sans-serif;}
-        li.MsoListParagraphCxSpFirst
+        p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
         	{margin-top:0in;
         	margin-right:0in;
         	margin-bottom:0in;
         	margin-left:.5in;
-        	line-height:95%;
-        	font-family:"Calibri",sans-serif;}	
-        p.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
-        	{margin-top:0in;
-        	margin-right:0in;
-        	margin-bottom:0in;
-        	margin-left:.5in;
-        	line-height:95%;
-        	font-size:18.0pt;
+        	line-height:100%;
+        	font-size:20.0pt;
         	font-family:"Calibri",sans-serif;}
-        li.MsoListParagraphCxSpMiddle
-        	{margin-top:0in;
-        	margin-right:0in;
-        	margin-bottom:0in;
-        	margin-left:.5in;
-        	line-height:95%;
-        	font-family:"Calibri",sans-serif;}	
-        p.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+        p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
         	{margin-top:0in;
         	margin-right:0in;
         	margin-bottom:10.0pt;
         	margin-left:.5in;
-        	line-height:95%;
-        	font-size:18.0pt;
+        	line-height:100%;
+        	font-size:20.0pt;
         	font-family:"Calibri",sans-serif;}
-        li.MsoListParagraphCxSpLast
-        	{margin-top:0in;
-        	margin-right:0in;
-        	margin-bottom:10.0pt;
-        	margin-left:.5in;
-        	line-height:95%;
-        	font-family:"Calibri",sans-serif;}	
         .MsoChpDefault
         	{font-family:"Calibri",sans-serif;}
         .MsoPapDefault
-        	{margin-bottom:10.0pt;
-        	line-height:95%;}
+        	{margin-bottom:8.0pt;
+        	line-height:107%;}
         @page WordSection1
         	{size:8.5in 14.0in;
         	margin:.75in 1.0in 1.0in 1.0in;}
@@ -103,28 +75,21 @@
         	{margin-bottom:0in;}
         ul
         	{margin-bottom:0in;}
-        @media print { 
-            html{ height: 99%; } 
-        },
-        .print:last-child {
-             page-break-after: auto;
-        }
-        .testing-valu{
-            font-weight: bold;
-            font-size: 17px;
-        }
+		.testing-valu{
+			font-weight: bold;
+			font-size: 21px;
+		}	
     </style>
+
 </head>
 
-<body lang=EN-US style='word-wrap:break-word'>    
+<body lang=EN-US style='word-wrap:break-word'>
     <%= render layout: 'form' do |namantaran| %>
-        <div class=WordSection1>
-            <div class="box" style="border-style: solid; border-color: black; padding: 3%; margin-bottom: 10px;">
-                <div style="display: grid;">
-                <p class="MsoNormal">
-                <span style='font-size:20.0pt;
-line-height:100%;font-family:"Kruti Dev 010"'>
-<span style='font-size:20.0pt;line-height:100%;font-family:"Kruti Dev 010"'>ukekUrj.k
+        <div class="WordSection1" style="border-style: solid; border-color: black;">
+            <div style="padding: 2%">
+                <p class=MsoListParagraph style='text-indent:-.25in'><span style='font-size:
+16.0pt;line-height:100%;font-family:"Kruti Dev 010"'>1-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:20.0pt;line-height:100%;font-family:"Kruti Dev 010"'>ukekUrj.k
 'kqYd tek jlhn dh izfr layXu
 gS@ugh gS</span></p>
 
@@ -254,144 +219,144 @@ color:#222222;background:white'>गया</span><span style='font-family:"Arial"
 color:#222222;background:white'>&nbsp;</span><span lang=HI style='font-size:
 17.0pt;font-family:"Mangal",serif;color:#222222;background:white'>।</span><span style='font-size:20.0pt;font-family:"Arial",sans-serif;color:#222222;
 background:white'>&nbsp;</span></p>
-</div>
+
+            </div>
         </div>
         <% end %>
-        <button class="preview button blue">Preview Dekhlo</button>
-        <button class="edit button red" style="display: none;">Edit Preview</button>
-        <button class="final-preview button green" style="display: none; float: right;">PRINT PAGE</button>
-            <script>
-                $(document).ready(function(){	
-                            $('.add').on('click', add);
-                            $('.remove').on('click', remove);
-                        
-                        function add() {
-                            var new_chq_no = parseInt($('#total_chq').val()) + 1;
-                            var new_input = "<input type='text' id='new_" + new_chq_no + "'><br/>";
-                        var  new_input = "<p style='margin-top:0.05in;margin-right:0in;margin-bottom:.0001pt;margin-left:0.5in;line-height:115%;font-family:'Calibri','sans-serif';text-indent:.5in;'><strong><span style='line-height:115%;color:#222222;background:white;'><span class='input-new'><strng><input type='text' class='testing ka-naam-ankit' id='new_" + new_chq_no + "'></strong><span></span></strong><span style='font-family:'Arial','sans-serif';color:#222222;background:white;'>&nbsp;</span></p>"
-                            $('#new_chq').append(new_input);
-                            
-                            $('#total_chq').val(new_chq_no);
-                        }
-                        
-                        function remove() {
-                            var last_chq_no = $('#total_chq').val();
-                        
-                            if (last_chq_no > 1) {
-                            $('#new_' + last_chq_no).remove();
-                            $('#total_chq').val(last_chq_no - 1);
-                            }
-                        }
-                        
-                        $('.preview').on('click', function(){
-                            $('form').submit(false);
-                            $('.add').hide()
-                            $('.remove').hide()
-                            $('.testing').each(function( index, ele ) {
-                                var valu = $(ele).val().replace(/^\s+|\s+$/gm,'');
-                                var paret = $(ele).parent().parent()
-                                paret.append("<span style='line-height:115%;font-family:&quot;Kruti Dev 010;' class='testing-valu'>"+ valu +"</span>")
-                                $(ele).hide()    
-                            });
-                        
-                            if($('.tal').val() === ''){
-                                $('#tal').remove()
-                            }
-                            if($('.prathm').val() === ''){
-                                $('#prathm').remove()
-                            }
-                            if($('.divitiya').val() === ''){
-                                $('#divitiya').remove()
-                            }
-                            if($('.tritiya').val() === ''){
-                                $('#tritiya').remove()
-                            }
-                            if($('.other').val() === ''){
-                            $('#other').remove()
-                            }
-                            
-                            var checkBox = $("#newAccountCheck");
-                            if (checkBox.is(":checked")){
-                            $('.new-account-label').show()
-                            checkBox.hide();
-                            } else {
-                            $('.new-account-label').hide()
-                            checkBox.hide();
-                            }
-                            $(this).hide()
-                            $('.edit').show()
-                            $('.final-preview').show()
-                        })
-                
-                        $('.edit').on('click', function(){
-                            $('form').submit(false);
-                            $('.preview').show();
-                            $('.testing-valu').remove()
-                            $('.testing').show()
-                            $(this).hide()
-                            $('.final-preview').hide()
-                            $('.add').show()
-                            $('.remove').show()
-                            $("#newAccountCheck").show();
-                            $('.new-account-label').show();
-                        });
-                        
-                        $('.flat-no').on('blur', function(){
-                            $('.flat-no1').val($(this).val())
-                            $('.flat-no2').val($(this).val())
-                        })
-                        
-                        $('.mohalla').on('blur', function(){
-                            $('.mohalla1').val($(this).val())
-                            $('.mohalla2').val(`, ${$(this).val()}`)
-                        })
-                        
-                        $('.pavati').on('blur', function(){
-                            $('.pavati1').val($(this).val())
-                        })
-                        
-                        $('.c-pavati').on('blur', function(){
-                            $('.c-pavati1').val($(this).val())
-                        })
-                
-                        $('.dinank').on('blur', function(){
-                            $('.dinank1').val($(this).val())
-                        })
-                        
-                        
-                        $('.book').on('blur', function(){
-                            $('.book1').val($(this).val())
-                        })
-                        
-                        $('#new_chq').on('blur', '.ka-naam-ankit', function(){
-                            var kaNaamAnkit = []
-                            $("#new_chq .ka-naam-ankit").each(function() {
-                                kaNaamAnkit.push($(this).val());
-                            });
-                            $('#ka-naam-ankit1').val(kaNaamAnkit.join(", "))
-                        })
-                        })
-                
-                        $('.final-preview').on('click', function(){
-                            $('.edit').hide()
-                            $('.preview').hide()
-                            $('.continue-action').hide()
-                            $(this).hide()
-                            window.print()
-                        });
-                
-                        $('#newAccountCheck').on('click', function(){
-                            if ($(this).is(":checked")){
-                            $('.flat2-mohalla2').show()
-                            $('.no-flat2-mohalla2').hide()
-                            $('#new_account').val(true);
-                            } else {
-                            $('.flat2-mohalla2').hide()
-                            $('.no-flat2-mohalla2').show()
-                            $('#new_account').val(false);
-                            }
-                        });
-            </script>
+		<button class="preview button blue">Preview Dekhlo</button>
+		<button class="edit button red" style="display: none;">Edit Preview</button>
+		<button class="final-preview button green" style="display: none; float: right;">PRINT PAGE</button>		
 </body>
+<script>
+$(document).ready(function(){	
+			$('.add').on('click', add);
+			$('.remove').on('click', remove);
+		
+		function add() {
+			var new_chq_no = parseInt($('#total_chq').val()) + 1;
+			var new_input = "<input type='text' id='new_" + new_chq_no + "'><br/>";
+		var  new_input = "<p style='margin-top:0.05in;margin-right:0in;margin-bottom:.0001pt;margin-left:0.5in;line-height:115%;font-family:'Calibri','sans-serif';text-indent:.5in;'><strong><span style='line-height:115%;color:#222222;background:white;'><span class='input-new'><strong><input type='text' class='testing ka-naam-ankit' id='new_" + new_chq_no + "'></strong><span></span></strong><span style='font-family:'Arial','sans-serif';color:#222222;background:white;'>&nbsp;</span></p>"
+			$('#new_chq').append(new_input);
+			
+			$('#total_chq').val(new_chq_no);
+		}
+		
+		function remove() {
+			var last_chq_no = $('#total_chq').val();
+		
+			if (last_chq_no > 1) {
+			$('#new_' + last_chq_no).remove();
+			$('#total_chq').val(last_chq_no - 1);
+			}
+		}
+		
+		$('.preview').on('click', function(){
+			$('form').submit(false);
+			$('.add').hide()
+			$('.remove').hide()
+			$('.testing').each(function( index, ele ) {
+				var valu = $(ele).val().replace(/^\s+|\s+$/gm,'');
+				var paret = $(ele).parent().parent()
+				paret.append("<span style='line-height:115%;font-family:&quot;Kruti Dev 010;' class='testing-valu'>"+ valu +"</span>")
+				$(ele).hide()    
+			});
+		
+			if($('.tal').val() === ''){
+				$('#tal').remove()
+			}
+			if($('.prathm').val() === ''){
+				$('#prathm').remove()
+			}
+			if($('.divitiya').val() === ''){
+				$('#divitiya').remove()
+			}
+			if($('.tritiya').val() === ''){
+				$('#tritiya').remove()
+			}
+			if($('.other').val() === ''){
+			$('#other').remove()
+			}
+			
+			var checkBox = $("#newAccountCheck");
+			if (checkBox.is(":checked")){
+			$('.new-account-label').show()
+			checkBox.hide();
+			} else {
+			$('.new-account-label').hide()
+			checkBox.hide();
+			}
+			$(this).hide()
+			$('.edit').show()
+			$('.final-preview').show()
+		})
 
+		$('.edit').on('click', function(){
+			$('form').submit(false);
+			$('.preview').show();
+			$('.testing-valu').remove()
+			$('.testing').show()
+			$(this).hide()
+			$('.final-preview').hide()
+			$('.add').show()
+			$('.remove').show()
+			$("#newAccountCheck").show();
+			$('.new-account-label').show();
+		});
+		
+		$('.flat-no').on('blur', function(){
+			$('.flat-no1').val($(this).val())
+			$('.flat-no2').val($(this).val())
+		})
+		
+		$('.mohalla').on('blur', function(){
+			$('.mohalla1').val($(this).val())
+			$('.mohalla2').val(`, ${$(this).val()}`)
+		})
+		
+		$('.pavati').on('blur', function(){
+			$('.pavati1').val($(this).val())
+		})
+		
+		$('.c-pavati').on('blur', function(){
+			$('.c-pavati1').val($(this).val())
+		})
+
+		$('.dinank').on('blur', function(){
+			$('.dinank1').val($(this).val())
+		})
+		
+		
+		$('.book').on('blur', function(){
+			$('.book1').val($(this).val())
+		})
+		
+		$('#new_chq').on('blur', '.ka-naam-ankit', function(){
+			var kaNaamAnkit = []
+			$("#new_chq .ka-naam-ankit").each(function() {
+				kaNaamAnkit.push($(this).val());
+			});
+			$('#ka-naam-ankit1').val(kaNaamAnkit.join(", "))
+		})
+		})
+
+		$('.final-preview').on('click', function(){
+			$('.edit').hide()
+			$('.preview').hide()
+			$('.continue-action').hide()
+			$(this).hide()
+			window.print()
+		});
+
+		$('#newAccountCheck').on('click', function(){
+			if ($(this).is(":checked")){
+			$('.flat2-mohalla2').show()
+			$('.no-flat2-mohalla2').hide()
+			$('#new_account').val(true);
+			} else {
+			$('.flat2-mohalla2').hide()
+			$('.no-flat2-mohalla2').show()
+			$('#new_account').val(false);
+			}
+		});
+</script>
 </html>
