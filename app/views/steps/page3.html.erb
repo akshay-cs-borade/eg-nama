@@ -72,24 +72,24 @@ font-family:"Kruti Dev 010"'><span style='font-size:18.0pt;line-height:
 130%;font-family:"Kruti Dev 010"'>Hkw[k.M Ø-@Hkou Ø- <span class="input-new"><strong><input type="text" class="testing flat-no" name="namantaran[flat_no]" value="<%= @namantaran.flat_no %>"></strong></span> eksgYyk
 <span class="input-new"><strong><input type="text" class="testing mohalla" name="namantaran[mohalla]" value="<%= @namantaran.mohalla %>"></strong></span></span></span>
                     </span>&nbsp;&nbsp;<span lang=EN-IN style='font-size:16.0pt;line-height:115%;
-font-family:"Kruti Dev 010"'>ukekUrju foHkktu ckcnA</span></p>
+font-family:"Kruti Dev 010"'><span style="font-size: 15px;">नामान्तरण</span> foHkktu ckcnA</span></p>
 
                 <p class=MsoNormal><span lang=EN-IN style='font-size:16.0pt;line-height:115%;
 font-family:"Kruti Dev 010"'><span class="input-new"><strong><input type="text" class="testing ka-naam-ankit1" id="ka-naam-ankit1" name="namantaran[ka_naam]" value="<%= @namantaran.ka_naam %>"></strong></span></span>
-                    <span lang=HI style='font-size:14.0pt;line-height:115%;font-family:"Kokila",sans-serif'>का
+                    <span lang=HI style='font-size:17.0pt;line-height:115%;font-family:"Kokila",sans-serif'>का
 आवेदन</span>&nbsp;&nbsp;<span lang=EN-IN style='font-size:
 16.0pt;line-height:115%;font-family:"Kruti Dev 010"'>vkod
-Øekad <span class="input-new"><strong><input type="text" class="testing" name="namantaran[aawak_no]" value="<%= @namantaran.aawak_no %>"></strong></span> fnukad <span class="input-new"><strong><input type="text" class="testing dinank" name="namantaran[aawak_dinank]" value="<%= @namantaran.aawak_dinank %>"></strong></span> dk e; jftLVMZ
+Øekad <span class="input-new"><strong><input type="text" class="testing" name="namantaran[aawak_no]" value="<%= @namantaran.aawak_no %>"></strong></span> fnukad <span class="input-new"><strong><input type="date" class="testing dinank" name="namantaran[aawak_dinank]" value="<%= @namantaran.aawak_dinank %>"></strong></span> dk e; jftLVMZ
 ys[k Øekad dk voyksdu dhft,A</span></p>
 
                 <p class=MsoNormal style='margin-bottom:0in'><span lang=EN-IN style='font-size:
 16.0pt;line-height:115%;font-family:"Kruti Dev 010"'>mDr edku dj olwyh esa
 <span class="input-new"><strong><input type="text" class="testing k-sthan-par1" id="k-sthan-par1" name="namantaran[sthan_par]" value="<%= @namantaran.sthan_par %>"></strong></span>
-ds uke ls vafdr gksdj fuEekuqlkj okf’kZd dj gSA</span></p>
+ds uke ls vafdr gksdj <span style="font-size: 15px;">निम्नानुसार </span>okf’kZd dj gSA</span></p>
 
                 <p class=MsoNormal><span lang=EN-IN style='font-size:16.0pt;line-height:115%;
-font-family:"Kruti Dev 010"'>laifr dj          ¶ySV jsV      izdk’k vfHkdj    r[r
-dj O;kid LoPNrk midj ty fudkldj      izyEcj ’kqYd       tehu lkykuk              fujkfJr
+font-family:"Kruti Dev 010"'>laifr dj          ¶ySV jsV      <span style="font-size: 15px;">प्रकाश</span> vfHkdj    r[r
+dj O;kid LoPNrk midj ty fudkldj      <span style="font-size: 15px;">प्लम्बर शुल्क</span>       tehu lkykuk              fujkfJr
 dj </span></p>
 
                 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;border:none'>
@@ -206,7 +206,7 @@ style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;</span></span><span style
                 </table>
 
                 <p class=MsoNormal style='margin-bottom:0in'><span lang=EN-IN style='font-size:
-16.0pt;line-height:115%;font-family:"Kruti Dev 010";color:white'>mifufj</span><span lang=EN-IN style='font-size:16.0pt;line-height:115%;font-family:"Kruti Dev 010"'>mifufj{kd }kjk fufj{k.k fd;k A prq% lhek dk feyku gksrk gSA vr% ukekUrju djus esa vkifRr
+16.0pt;line-height:115%;font-family:"Kruti Dev 010";color:white'>mifufj</span><span lang=EN-IN style='font-size:16.0pt;line-height:115%;font-family:"Kruti Dev 010"'>mifufj{kd }kjk fufj{k.k fd;k A prq% lhek dk feyku gksrk gSA vr% <span style="font-size: 15px;">नामान्तरण</span> djus esa vkifRr
 ugha gS A</span></p>
 
                 <p class=MsoNormal style='margin-bottom:0in'><span lang=EN-IN style='font-size:
@@ -237,7 +237,7 @@ font-family:"Kruti Dev 010"'><span class="input-new"><strong><input type="text" 
 
                 <p class=MsoNormal style='margin-bottom:0in'><span lang=EN-IN style='font-size:
 16.0pt;line-height:115%;font-family:"Kruti Dev 010"'>dk uke vafdr djus dh d`i;k
-Lohd`fr iznku djus dk d’V djs A</span></p>
+Lohd`fr iznku djs A</span></p>
 
                 <p class=MsoNormal><span lang=EN-IN style='font-size:16.0pt;line-height:115%;
 font-family:"Kruti Dev 010"'>&nbsp;</span></p>
@@ -292,6 +292,12 @@ $(document).ready(function(){
             $('.remove').hide()
             $('.testing').each(function( index, ele ) {
                 var valu = $(ele).val().replace(/^\s+|\s+$/gm,'');
+                if($(ele).hasClass('dinank') || $(ele).hasClass('dinank1')){
+                  var formatter = new Intl.DateTimeFormat('en-UK', { day: '2-digit', month: '2-digit', year: 'numeric' });
+                  var newDate = new Date(valu);
+                  var formattedDate = formatter.format(newDate);
+                  valu = formattedDate;
+                }
                 var paret = $(ele).parent().parent()
                 paret.append("<span style='line-height:115%;font-family:&quot;Kruti Dev 010;' class='testing-valu'>"+ valu +"</span>")
                 $(ele).hide()    
@@ -380,6 +386,7 @@ $(document).ready(function(){
             $('.preview').hide()
             $('.continue-action').hide()
             $(this).hide()
+            $('.logout').hide()
             window.print()
         });
 

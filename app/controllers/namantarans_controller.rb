@@ -3,7 +3,11 @@ class NamantaransController < ApplicationController
 
   # GET /namantarans or /namantarans.json
   def index
-    @namantarans = Namantaran.all
+    if current_user.admin
+      @namantarans = Namantaran.all
+    else    
+      @namantarans = current_user.namantarans
+    end  
   end
 
   # GET /namantarans/1 or /namantarans/1.json
@@ -22,7 +26,7 @@ class NamantaransController < ApplicationController
 
   # POST /namantarans or /namantarans.json
   def create
-    @namantaran = Namantaran.new
+    @namantaran = Namantaran.new(user_id: current_user.id)
     if @namantaran.save
       redirect_to namantaran_step_path(@namantaran, :page1)
     else
