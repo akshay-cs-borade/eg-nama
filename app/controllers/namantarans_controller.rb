@@ -57,6 +57,22 @@ class NamantaransController < ApplicationController
     end
   end
 
+  def copy_namantaran
+    n = Namantaran.find_by(id: params[:id])
+    
+    if n.present?
+      (1..params[:copy_no].to_i).each do |i|
+        n_new = n.dup
+        n_new.save    
+      end
+    end  
+
+    respond_to do |format|
+      format.html { redirect_to namantarans_url, notice: "namantarans successfully copied." }
+      format.json { head :no_content }
+    end
+  end  
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_namantaran

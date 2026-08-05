@@ -7,6 +7,9 @@ Rails.application.routes.draw do
 
 
   resources :namantarans do
+    collection do 
+      post :copy_namantaran
+    end  
     resources :steps, only: [:show, :update]
   end
 

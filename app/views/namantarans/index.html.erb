@@ -17,6 +17,7 @@
         <th><span style="line-height:115%;font-family:&quot;Kruti Dev 010&quot;;">&nbsp;lfoZl ua-@fiu ua-&nbsp;</span></th>
         <th><span style="font-family:&quot;Kruti Dev 010&quot;;">dk uke vafdr fd;k x;k gSA</span></th>
         <th><span style="line-height:115%;">author</span></th>
+        <th><span style="line-height:115%;">Date</span></th>
         <th>Action</th>
       </tr>
     </thead>
@@ -27,6 +28,25 @@
     </tbody>
   </table>
 </div>
+
+<% if current_user.admin %>
+<h1>Copy Namantaran</h1>
+<%= form_with url: copy_namantaran_namantarans_path, method: :post do |f| %>
+  <div class="field">
+    <%= f.label :copy_no %>
+    <%= f.number_field :copy_no, required: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :id %>
+    <%= f.number_field :id, required: true %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Submit" %>
+  </div>
+<% end %>
+<% end %>
 
 <script>
 $(document).ready( function () {
