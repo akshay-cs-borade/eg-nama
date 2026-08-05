@@ -21,7 +21,17 @@
       </span>  
     </td>
     <td>
-      <a href="<%= edit_namantaran_path(namantaran) %>">
+      <span>
+        <%= namantaran.user.email %>
+      </span>  
+    </td>
+    <td>
+    <span>
+      <%= namantaran.created_at.strftime("%d/%B/%Y") %>
+    </span>  
+    </td>
+    <td>
+      <a href="<%= namantaran_step_path(namantaran, :page1) %>">
         <button class="button blue" style='padding: 5px 15px; font-size: 15px;'>Edit</button>
       </a>
     </td>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_01_26_072808) do
+ActiveRecord::Schema[7.0].define(version: 2024_07_28_105933) do
   create_table "namantarans", force: :cascade do |t|
     t.string "flat_no"
     t.string "mohalla"
@@ -29,9 +29,28 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_26_072808) do
     t.string "divitiya"
     t.string "tritiya"
     t.string "other"
+    t.string "jalkar_pin"
+    t.string "kachara_pin"
+    t.string "jahir_suchna_patr"
+    t.string "jahir_suchna_dinank"
     t.boolean "new_account", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "rujwat_no"
+    t.integer "user_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.boolean "admin", default: false
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
 end

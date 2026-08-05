@@ -3,7 +3,11 @@ class NamantaransController < ApplicationController
 
   # GET /namantarans or /namantarans.json
   def index
-    @namantarans = Namantaran.all
+    if current_user.admin
+      @namantarans = Namantaran.all
+    else    
+      @namantarans = current_user.namantarans
+    end  
   end
 
   # GET /namantarans/1 or /namantarans/1.json
@@ -13,6 +17,7 @@ class NamantaransController < ApplicationController
   # GET /namantarans/new
   def new
     @namantaran = Namantaran.new
+    @namantaran.save
   end
 
   # GET /namantarans/1/edit
@@ -21,14 +26,11 @@ class NamantaransController < ApplicationController
 
   # POST /namantarans or /namantarans.json
   def create
-    @namantaran = Namantaran.new(namantaran_params)
-
-    respond_to do |format|
-      if @namantaran.save
-        format.html { redirect_to edit_namantaran_url(@namantaran), notice: "namantaran was successfully created." }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-      end
+    @namantaran = Namantaran.new(user_id: current_user.id)
+    if @namantaran.save
+      redirect_to namantaran_step_path(@namantaran, :page1)
+    else
+      format.html { render :new, status: :unprocessable_entity }
     end
   end
 
@@ -36,7 +38,7 @@ class NamantaransController < ApplicationController
   def update
     respond_to do |format|
       if @namantaran.update(namantaran_params)
-        format.html { redirect_to edit_namantaran_url(@namantaran), notice: "namantaran was successfully updated." }
+        format.html { redirect_to namantaran_step_path(@namantaran, :page4), notice: "namantaran was successfully updated." }
         format.json { render :show, status: :ok, location: @namantaran }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -55,6 +57,22 @@ class NamantaransController < ApplicationController
     end
   end
 
+  def copy_namantaran
+    n = Namantaran.find_by(id: params[:id])
+    
+    if n.present?
+      (1..params[:copy_no].to_i).each do |i|
+        n_new = n.dup
+        n_new.save    
+      end
+    end  
+
+    respond_to do |format|
+      format.html { redirect_to namantarans_url, notice: "namantarans successfully copied." }
+      format.json { head :no_content }
+    end
+  end  
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_namantaran
@@ -63,6 +81,6 @@ class NamantaransController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def namantaran_params
-      params.require(:namantaran).permit(:flat_no, :pin_no, :aawak_no, :aawak_dinank, :sthan_par, :ka_naam, :nama_dinank, :pavati_no, :nama_rashi, :rujwat_dinank, :rujwat_rashi, :tal, :prathm, :divitiya, :tritiya, :other, :mohalla, :new_account)
+      params.require(:namantaran).permit(:flat_no, :pin_no, :aawak_no, :aawak_dinank, :sthan_par, :ka_naam, :nama_dinank, :pavati_no, :nama_rashi, :rujwat_dinank, :rujwat_rashi, :tal, :prathm, :divitiya, :tritiya, :other, :mohalla, :new_account, :jalkar_pin, :kachara_pin, :jahir_suchna_patr, :jahir_suchna_dinank, :rujwat_no)
     end
 end

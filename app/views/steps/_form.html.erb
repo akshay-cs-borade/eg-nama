@@ -1,0 +1,7 @@
+<%= form_for @namantaran, url: wizard_path do |f| %>
+    <%= yield f %>
+
+    <div class="actions continue-action">
+        <%= f.submit "Continue", :class => 'button red' %>
+    </div>
+<% end %>
